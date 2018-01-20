@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+</head>
+<style>
+  h1 {
+    font-size: 200px;
+    position: relative;
+    top: 50px;
+    animation: font 1s ease-in-out .5s reverse;
+    text-align: center;
+    background: -webkit-linear-gradient(black, #ADD8E6, #BCC6CC, #98FF98, black);
+    -webkit-background-clip: text;
+    /* this is so the gradient is the shape of the text and not the background */
+    -webkit-text-fill-color: transparent;
+    /* This allows the gradient to be on the inside of the text not just the border*/
+  }
+
+  @keyframes font {
+    from {
+      font-size: 200px
+    }
+    to {
+      font-size: 1000px;
+    }
+  }
+
+  body {
+    background: radial-gradient(black, #3e3e3e/*darkgray*/
+    );
+
+  }
+
+  body,
+  html {
+    height: 100%;
+  }
+
+  div {
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px white;
+    transition: color 1s;
+    transform: skewX(-10deg);
+    border: 10px solid white;
+
+  }
+
+  div:hover {
+    color: white;
+    text-shadow: 5px 5px green;
+    transform: skewX(10deg);
+  }
+</style>
+
+<body>
+  <h1>KC</h1>
+  <div> And The Sunshine Band </div>
+</body>
+
+</html>
